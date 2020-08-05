@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKEditor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.min.css">
+  <style>
+    .container {
+      max-width: 800px;
+      margin-top: 50px;
+    }
+
+    #cke_1_contents {
+      height: 400px !important; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Eksempel på tekst editor</h1>
+      <textarea name="content">
+        To brændende både i Kobbefjord
+        Nuuk 30/7-2020 kl.15:34
+        Arktisk kommando er underrettet og er til stede med redningshelikopter. Besætningerne reddet over på tililende assisterende skibe. Den ene båd er sunket og den anden slæbt på lavt vand.
+        Arktisk Kommando løser følgende opgaver i fred, krise og krig i Arktis:
+        Kollektivt forsvar, overvågning og suverænitetshævdelse.
+        Eftersøgnings- og redningstjeneste.
+        Fiskeriinspektion, maritim miljøovervågning, håndhævelse og forureningsbekæmpelse.
+        Støtte til sikker afvikling af skibstrafik.
+        Ammunitionsrydning.
+        Søopmåling ved Grønland.
+        Bistand til politiet og lokalsamfundet.
+        Grønlandsvogternes opgave er at kunne rapportere om:
+        Havmiljøforureninger, observationer om nødstedte på vand og i fjeld samt militær aktivitet til lands, til vands og i luften.
+      </textarea>
+    </div>
+  </div>
+  <script src="ckeditor/ckeditor.js"></script>
+  <script>
+    CKEDITOR.replace('content');
+  </script>
+</body>
+</html>
